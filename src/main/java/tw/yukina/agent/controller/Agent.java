@@ -12,15 +12,20 @@ import java.io.IOException;
 @Validated
 public class Agent {
     @GetMapping(path="/api/joplin/note/{uuid}")
-    public void openNote(@PathVariable @Pattern(regexp = "^([a-zA-Z\\d]{8})$") String uuid){
-        try {
-            new ProcessBuilder("i3-msg", "[class=Joplin]", "focus").start();
-            new ProcessBuilder("xdotool", "key", "F6").start();
-            Thread.sleep(10);
-            new ProcessBuilder("xdotool", "key", "BackSpace").start();
-            new ProcessBuilder("xdotool", "type", uuid).start();
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
+    public String openNote(@PathVariable @Pattern(regexp = "^([a-zA-Z\\d]{8})$") String uuid){
+
+        new Thread(() -> {
+            try {
+                new ProcessBuilder("i3-msg", "[class=Joplin]", "focus").start();
+                new ProcessBuilder("xdotool", "key", "F6").start();
+                Thread.sleep(10);
+                new ProcessBuilder("xdotool", "key", "BackSpace").start();
+                new ProcessBuilder("xdotool", "type", uuid).start();
+            } catch (IOException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
+        return "<script> window.close() </script>";
     }
 }
