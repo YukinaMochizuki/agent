@@ -1,0 +1,32 @@
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+stages:
+  - build
+  - build-native
+
+build:
+  image: maven:3-openjdk-11
+  stage: build
+  script: mvn clean package -e
+  cache:
+    key: build-cache
+    paths:
+      - .m2/repository
+  artifacts:
+    paths:
+      - target/*.jar
+    expire_in: 1 week
+
+# build-native:
+#   image: maven:3-openjdk-11
+#   stage: build
+#   script: mvn clean package -e
+#   cache:
+#     key: build-cache
+#     paths:
+#       - .m2/repository
+#   artifacts:
+#     paths:
+#       - target/*.jar
+#     expire_in: 1 week
