@@ -1,0 +1,11 @@
+Source: shuvi-agent
+Section: utils
+Priority: optional
+Maintainer: Snow <1p41p4jejo@gmail.com>
+Build-Depends: debhelper (>=9.0.0),
+               dh-systemd (>= 1.5)
+Standards-Version: 0.0.2-1
+
+Package: shuvi-agent
+Architecture: amd64
+Description: agnet project

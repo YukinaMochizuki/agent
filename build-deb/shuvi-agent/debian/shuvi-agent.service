@@ -1,0 +1,13 @@
+[Unit]
+Description=shuvi agent service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=mochizuki
+Environment=DISPLAY=:0
+ExecStart=shuvi-agent
+
+[Install]
+WantedBy=multi-user.target
