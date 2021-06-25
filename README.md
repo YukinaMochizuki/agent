@@ -24,8 +24,12 @@ Although it's still far away, but I am working hard.
 - Spring Native 0.10.0-SNAPSHOT
 - [Project Lombok](https://projectlombok.org/)
 
+### Other dependencies with your runtime environment
+- i3wm or i3-grap - Use `i3-msg` to control window manager
+- xdotool - Simulate keyboard input and mouse activity
+
 ### Why native?
-Speed and experimental spirit. It took 3 seconds to start the packaged jar, but native executable only took less than 0.2. Obviously there's a very big gap.
+Speed and experimental spirit. It took 3 seconds to start the packaged jar, but native executable only took less than 0.2. Obviously there's a very big gap between them.
 
 ![](https://i.imgur.com/orh4j5t.png)
 
@@ -77,7 +81,7 @@ sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 ### About Joplin
 Although I'm a heavy user of Notion, but some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Because even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
 
-So usually I store these data on open source Note-taking solutions that support e2e encryption, like Joplin. Then how to seamlessly connect Notion and Joplin has become an thorny issue. This section are my attempts on it.
+So usually I store these data on open source Note-taking solutions that support e2e encryption, like [Joplin](https://joplinapp.org). Then how to seamlessly connect Notion and Joplin has become a thorny issue, this section are my attempts at it.
 
 ### Switch window to Joplin then opens the specific note
 
