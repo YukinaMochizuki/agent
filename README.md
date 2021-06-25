@@ -79,7 +79,7 @@ sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 
 ## Use case and demo
 ### About Joplin
-Although I'm a heavy user of Notion, but some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
+Although I'm a heavy user of Notion, some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
 
 So usually I store these data on open source Note-taking solutions that support e2e encryption, like [Joplin](https://joplinapp.org). Then how to seamlessly connect Notion and Joplin has become a thorny issue, this section are my attempts at it.
 
