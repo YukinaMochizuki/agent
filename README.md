@@ -24,7 +24,7 @@ It's far away from the vision, I’m still working hard.
 - Spring Native 0.10.0-SNAPSHOT
 - [Project Lombok](https://projectlombok.org/)
 
-### Other dependencies with your runtime environment
+### Other dependencies with runtime
 - i3wm or i3-grap - Use `i3-msg` to control window manager
 - xdotool - Simulate keyboard input and mouse activity
 
