@@ -53,7 +53,7 @@ Make sure build native executable is been completed and successfully.
 
 ```Shell
 mkdir build-deb/shuvi-agent/bin
-mv target/tw.yukina.agent.application build-deb/shuvi-agent/bin/
+mv target/tw.yukina.agent.application build-deb/shuvi-agent/bin/shuvi-agent
 cd build-deb/shuvi-agent/
 vim debian/shuvi-agent.service //change User=mochizuki to your logined user name
 dpkg-buildpackage -us -uc //build deb
