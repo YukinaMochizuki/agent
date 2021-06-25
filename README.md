@@ -67,3 +67,5 @@ cd ..
 sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 ```
 
+[![asciicast](https://asciinema.org/a/E4gkPLOrJKZaTl32t9SThcYtX.svg)](https://asciinema.org/a/E4gkPLOrJKZaTl32t9SThcYtX)
+
