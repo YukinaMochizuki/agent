@@ -6,7 +6,7 @@ My desired vision can be summed up in a sentence:
 
 > The “Last Mile” in personal computer auxiliary control system.
 
-Although it is still far away, but I am working hard.
+Although it's still far away, but I am working hard.
 
 ## General Information
 - Project status: **Active**, medium priority
@@ -24,8 +24,12 @@ Although it is still far away, but I am working hard.
 - Spring Native 0.10.0-SNAPSHOT
 - [Project Lombok](https://projectlombok.org/)
 
-## Why native?
+### Why native?
+Speed and experimental spirit. It took 3 seconds to start the packaged jar, but native executable only took less than 0.2. Obviously there's a very big gap.
 
+![](https://i.imgur.com/orh4j5t.png)
+
+![](https://i.imgur.com/Li3fqh2.png)
 
 ## Build
 ### Native Executable
@@ -68,4 +72,15 @@ sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 ```
 
 [![asciicast](https://asciinema.org/a/E4gkPLOrJKZaTl32t9SThcYtX.svg)](https://asciinema.org/a/E4gkPLOrJKZaTl32t9SThcYtX)
+
+## Use case and demo
+### About Joplin
+Although I'm a heavy user of Notion, but some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Because even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
+
+So usually I store these data on open source Note-taking solutions that support e2e encryption, like Joplin. Then how to seamlessly connect Notion and Joplin has become an thorny issue. This section are my attempts on it.
+
+### Switch window to Joplin then opens the specific note
+
+
+
 
