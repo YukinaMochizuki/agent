@@ -46,7 +46,7 @@ Then native executable will be created in `target` folder and named `tw.yukina.a
 - debhelper
 - dh-systemd
 
-Make sure build native executable is been completed successfully.
+Make sure build native executable is been completed and successfully.
 
 ```Shell
 cd build-deb/shuvi-agent/
