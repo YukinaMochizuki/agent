@@ -24,6 +24,9 @@ Although it is still far away, but I am working hard.
 - Spring Native 0.10.0-SNAPSHOT
 - [Project Lombok](https://projectlombok.org/)
 
+## Why native?
+
+
 ## Build
 ### Native Executable
 #### Requirements
@@ -49,8 +52,18 @@ Then native executable will be created in `target` folder and named `tw.yukina.a
 Make sure build native executable is been completed and successfully.
 
 ```Shell
+mkdir build-deb/shuvi-agent/bin
+mv target/tw.yukina.agent.application build-deb/shuvi-agent/bin/
 cd build-deb/shuvi-agent/
 vim debian/shuvi-agent.service //change User=mochizuki to your logined user name
 dpkg-buildpackage -us -uc //build deb
+```
+## Install
+
+After building the deb file.
+
+```Shell
+cd ..
+sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 ```
 
