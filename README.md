@@ -21,11 +21,11 @@ It's far away from the vision, I’m still working hard.
 - Spring Boot 2.5.0
   - Spring Boot Starter Web
   - Spring Boot Starter Validation: For security reasons, all parameters from the request need to be strictly verified
-- Spring Native 0.10.0-SNAPSHOT
+- [Spring Native](https://github.com/spring-projects-experimental/spring-native) 0.10.0-SNAPSHOT
 - [Project Lombok](https://projectlombok.org/)
 
 ### Other dependencies with runtime
-- i3wm or i3-grap - Use `i3-msg` to control window manager
+- [i3wm](https://i3wm.org) or [i3-gaps](https://github.com/Airblader/i3) - Use `i3-msg` to control window manager
 - xdotool - Simulate keyboard input and mouse activity
 
 ### Why native?
@@ -79,12 +79,13 @@ sudo dpkg -i shuvi-agent_0.0.2-1_amd64.deb
 
 ## Use case and demo
 ### About Joplin
-Although I'm a heavy user of Notion, some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
+Although I'm a heavy user of [Notion](https://www.notion.so), some sensitive information still shouldn't be stored on it (like any password or personal info that's too private). Even though Notion says they has the highest level of privacy policy, but the truth is Notion still do not support e2e encryption. It shouldn't be completely trusted.
 
 So usually I store these data on open source Note-taking solutions that support e2e encryption, like [Joplin](https://joplinapp.org). Then how to seamlessly connect Notion and Joplin has become a thorny issue, this section are my attempts at it.
 
 ### Switch window to Joplin then opens the specific note
+#### If successful
+[![](https://raw.githubusercontent.com/YukinaMochizuki/agent/master/2021-06-29%2011-29-27.gif)](https://raw.githubusercontent.com/YukinaMochizuki/agent/master/2021-06-29%2011-29-27.gif)
 
-
-
-
+#### If return non-zero code
+[![](https://raw.githubusercontent.com/YukinaMochizuki/agent/master/2021-06-29%2011-30-38.gif)](https://raw.githubusercontent.com/YukinaMochizuki/agent/master/2021-06-29%2011-30-38.gif)
